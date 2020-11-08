@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Charmonman:wght@400;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+	<style type="text/css">
+		*{
+
+			font-family: 'Pacifico', cursive;
+		}
+		.menu-top {
+			-webkit-box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.75);
+			-moz-box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.75);
+			box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.75);
+		}
+		.top {
+			height: 50px;
+			background: #d4f4ff;
+			line-height: 50px;
+			font-size: 25px;
+			color: orange;
+		}
+		.category-head {
+			background: rgba(248,210,250,1);
+			background: -moz-linear-gradient(top, rgba(248,210,250,1) 0%, rgba(255,255,255,1) 100%);
+			background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(248,210,250,1)), color-stop(100%, rgba(255,255,255,1)));
+			background: -webkit-linear-gradient(top, rgba(248,210,250,1) 0%, rgba(255,255,255,1) 100%);
+			background: -o-linear-gradient(top, rgba(248,210,250,1) 0%, rgba(255,255,255,1) 100%);
+			background: -ms-linear-gradient(top, rgba(248,210,250,1) 0%, rgba(255,255,255,1) 100%);
+			background: linear-gradient(to bottom, rgba(248,210,250,1) 0%, rgba(255,255,255,1) 100%);
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8d2fa', endColorstr='#ffffff', GradientType=0 );
+			height: 50px !important;
+			color: orange;
+		}
+		.category-li {
+			border-bottom: lightgray 1px solid;	
+			/*color: orange;*/
+		}
+		.category-li:hover {
+			color: orange
+		}
+		.color-orange {
+			color: orange;
+		}
+		.img-product, .img-product2 {
+			transition: 0.4s;
+		}
+		.product:hover .img-product {
+			transform: scale(1.4); 
+		}
+
+	</style>
+</head>
+<body>
+	<div class="container-fluid">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light menu-top fixed-top" style="background-color: white !important;">
+			<a class="navbar-brand" href="#"><img src="https://i.pinimg.com/originals/4f/e1/f8/4fe1f8492f260526521c11b40ff1487b.jpg" width="50px" alt=""></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse  ml-auto" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item active ml-3">
+						<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item ml-3">
+						<a class="nav-link" href="#">Link</a>
+					</li>
+					<li class="nav-item dropdown ml-3">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Dropdown
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="#">Action</a>
+							<a class="dropdown-item" href="#">Another action</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="#">Something else here</a>
+						</div>
+					</li>
+					<li class="nav-item ml-3">
+						<a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+					</li>
+				</ul>
+				<form class="form-inline my-2 my-lg-0">
+					<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+					<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+				</form>
+			</div>
+		</nav>
+		<div class="row">
+			<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+				<ol class="carousel-indicators">
+					<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+					<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+					<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+				</ol>
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<img class="d-block w-100" src="http://bizweb.dktcdn.net/100/053/643/themes/794131/assets/slider_1.jpg?1603957583304" alt="First slide">
+					</div>
+					<div class="carousel-item">
+						<img class="d-block w-100" src="http://bizweb.dktcdn.net/100/053/643/themes/794131/assets/slider_1.jpg?1603957583304" alt="Second slide">
+					</div>
+					<div class="carousel-item">
+						<img class="d-block w-100" src="http://bizweb.dktcdn.net/100/053/643/themes/794131/assets/slider_1.jpg?1603957583304" alt="Third slide">
+					</div>
+				</div>
+				<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				</a>
+			</div>
+		</div>
+		
+		<div class="container content">
+			<div class="row mt-5">
+				<div class="col-3 menutrai">
+					<div class="row mb-5">
+						<h3 class="category-head col-12 mb-3">Sản phẩm nổi bật</h3>
+						<p class="category-li col-12 ">Hello</p>
+						<p class="category-li col-12">Hello</p>
+						<p class="category-li col-12">Hello</p>
+						<p class="category-li col-12">Hello</p>
+						<p class="category-li col-12">Hello</p>
+						<p class="category-li col-12">Hello</p>
+					</div>
+					<div class="row mb-5">
+						<h3 class="category-head col-12 mb-3">Sản phẩm nổi bật</h3>
+						<div class="col-12">
+							<div class="col-12">
+							<div class="row product">
+								<div class="category-li col-3 "><a href="chiTietSanPham.html"><img width="100%" src="http://bizweb.dktcdn.net/thumb/large/100/053/643/products/113.jpg?v=1454040266683" alt="" class="img-product"></a></div>
+								<div class="category-li col-9 ">
+									<div class="row" style="color: black">Hello</div>
+									<div class="row">340.000</div>
+								</div>
+							</div>
+							<div class="row product">
+								<div class="category-li col-3 "><a href="chiTietSanPham.html"><img width="100%" src="http://bizweb.dktcdn.net/thumb/large/100/053/643/products/113.jpg?v=1454040266683" alt="" class="img-product"></a></div>
+								<div class="category-li col-9 ">
+									<div class="row" style="color: black">Hello</div>
+									<div class="row">340.000</div>
+								</div>
+							</div>
+							<div class="row product">
+								<div class="category-li col-3 "><a href="chiTietSanPham.html"><img width="100%" src="http://bizweb.dktcdn.net/thumb/large/100/053/643/products/113.jpg?v=1454040266683" alt="" class="img-product"></a></div>
+								<div class="category-li col-9 ">
+									<div class="row" style="color: black">Hello</div>
+									<div class="row">340.000</div>
+								</div>
+							</div>
+							<div class="row product">
+								<div class="category-li col-3 "><a href="chiTietSanPham.html"><img width="100%" src="http://bizweb.dktcdn.net/thumb/large/100/053/643/products/113.jpg?v=1454040266683" alt="" class="img-product"></a></div>
+								<div class="category-li col-9 ">
+									<div class="row" style="color: black">Hello</div>
+									<div class="row">340.000</div>
+								</div>
+							</div>
+							<div class="row product">
+								<div class="category-li col-3 "><a href="chiTietSanPham.html"><img width="100%" src="http://bizweb.dktcdn.net/thumb/large/100/053/643/products/113.jpg?v=1454040266683" alt="" class="img-product"></a></div>
+								<div class="category-li col-9 ">
+									<div class="row" style="color: black">Hello</div>
+									<div class="row">340.000</div>
+								</div>
+							</div>
+							<div class="row product">
+								<div class="category-li col-3 "><a href="chiTietSanPham.html"><img width="100%" src="http://bizweb.dktcdn.net/thumb/large/100/053/643/products/113.jpg?v=1454040266683" alt="" class="img-product"></a></div>
+								<div class="category-li col-9 ">
+									<div class="row" style="color: black">Hello</div>
+									<div class="row">340.000</div>
+								</div>
+							</div>
+						</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-9">
+					<div class="row m-3">
+						<h1>Chi tiet san pham</h1>
+					</div>
+					<div class="row  mb-3">
+						<div class="col-6 text-center product">
+							<img src="http://bizweb.dktcdn.net/thumb/large/100/053/643/products/113.jpg?v=1454040266683" class="img-product2" width="100%">
+							
+						</div>
+						<div class="col-6">
+							<h3>12345567890</h3>
+							<p>100.000$</p>
+							<p>Mo ta: Ngon vl :))))))</p>
+							<button class="btn btn-success">Mua</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12">
+					<img src="https://image.shutterstock.com/image-photo/mexican-taco-meat-beans-vegetables-260nw-692950210.jpg" width="100%" alt="">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<footer class="mt-3 foot">
+	<div class="container-fluid padding">
+		<div class="row text-center">
+			<div class="col-4 info">
+				<hr class="light">
+				<h3>Đào Như Anh</h3>
+				<hr class="light">
+				<p>0359813619</p>
+				<p>chopperlouis@gmail.com</p>
+				<p>55/255 Cầu Giấy</p>
+			</div>
+			<div class="col-4 info">
+				<hr class="light">
+				<h3>Đào Như Anh</h3>
+				<hr class="light">
+				<p>0359813619</p>
+				<p>chopperlouis@gmail.com</p>
+				<p>55/255 Cầu Giấy</p>
+			</div>
+			<div class="col-4 info">
+				<hr class="light">
+				<h3>Đào Như Anh</h3>
+				<hr class="light">
+				<p>0359813619</p>
+				<p>chopperlouis@gmail.com</p>
+				<p>55/255 Cầu Giấy</p>
+			</div>
+			<div class="col-12">
+				<hr class="light-100">
+				<h5>&copy; AHA</h5>
+
+			</div>
+		</div>
+	</div>
+</footer>
+</div>
+</body>
+</html>
